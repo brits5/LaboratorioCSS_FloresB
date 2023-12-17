@@ -1,0 +1,340 @@
+/****************BARRA PRINCIPAL*********/
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #A3A656;
+    margin: 0px;
+    padding: 11px 0px 11px 55px;
+    font-family: interRegular;
+}
+
+#menuSPA{
+    width: 100%;
+    display: flex; /*para que se acomode las letras de los iconos*/
+    font-size: 16px;
+    
+}
+
+
+header section ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+#menuSPA ul a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#menuSPA ul li {
+    display: inline; /*li en linea*/
+    margin: 0px;
+    padding: 0px 15px;
+}
+
+#menuSPA ul li a:hover {
+    color: #ffff00;
+}
+
+#listaPrin{
+    width: 80%;
+}
+
+/*OJITO*/
+#iconosPrin{
+    width: 20%;
+    display: flex;
+    justify-content: right;
+    align-items: center; /*medio verticalmente*/
+}
+
+
+
+/*ojito que no se usa el padre fa solid*/
+.fa-circle-user{
+    font-size: 2.7rem;
+    padding-right: 7px;
+}
+.fa-caret-down{
+    padding: 0px 15px 0px 6px;
+}
+
+#bandera{
+    display: flex;
+    align-items: center;
+    padding: 0px 15px 0px 21px;
+}
+
+#bandera img{
+    margin-right: 6px;
+}
+
+#miCuenta{
+    display: flex;
+    align-items: center;
+    padding: 0px 20px 0px 0px;
+    font-size: 15px;
+}
+
+#miCuenta img{
+    margin-right: 8px;
+}
+
+#ES{
+    padding: 0px 9px 0px 0px;
+    font-size: 13px;
+}
+
+
+@font-face {
+    font-family: 'interRegular';
+    src: url(../fuentes/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'interSemi';
+    src: url(../fuentes/Inter-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'romanesco';
+    src: url(../fuentes/Romanesco-Regular.ttf);
+}
+
+
+/************IMAGEN Y PRINCIPAL********************/
+#imagenHojas{
+    background-image: url("../images/main.png");
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#textoHojas{
+    float: inline-start; /*Para que no haya franja blanca al inicio de la imagen*/
+    padding: 230px 0px 0px 220px;
+}
+
+#textoHojas h1{
+    font-family: romanesco;
+    font-size: 96px;
+    font-weight: normal; /*Para quitarle la negrita*/
+    margin: 0px;
+}
+
+#textoHojas h2{
+    font-family: interSemi;
+    font-size: 32px;
+}
+
+/*+++++++++++++++++Seccion Buscador++++++++++++++++++++++++++*/
+#cita{
+    background-color: #F2F6F6;
+    padding: 28px 0px 28px 0px;
+    justify-content: center;
+    display: flex;
+    font-family: interRegular;
+}
+
+#cita input{
+    border: none;
+    border-radius: 13px;
+    padding: 10px 20px 10px 20px;
+    align-items: center;   
+}
+
+#cita input::placeholder{
+    color: #9E9A9A;
+    font-size: 16px;
+}
+
+#cita span{
+    margin: 0px 0px;
+    padding: 12px 15px 12px 50px;
+    font-size: 16px; 
+}
+
+#reservarCita{
+    width: 250px;
+}
+
+#informacionImg article div h2{
+    background-color: #A3A656;
+    margin: 0;
+    color: #FFF;
+    text-align: center;
+    width: 350px;
+    padding: 20px 0px 20px 0px;
+    font-family: interSemi;
+    font-size: 32px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+#informacionImg{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 100px 0px 100px 0px;
+}
+
+#informacionImg article{
+    margin: 0px 67px;
+}
+
+
+#informacionImg article p{
+color: #000000;
+font-family: interRegular;
+font-size: 14px;
+font-weight: 500;
+}
+
+
+
+#informacionImg article div span{
+    font-size: 30px;
+    font-family: interRegular;
+    font-weight: bolder;
+}
+
+#informacionImg article div button{
+    border: none;
+    font-weight: bold; /*negrilla*/
+    float: right; /*flote a la derecha*/
+    background-color: #A3A656;
+    color: #FFF;
+    border-radius: 35px;
+    padding: 10px;
+    width: 130px; /*largo del boton*/
+}
+
+
+#informacionImg article div button:hover{
+    background-color: #384001;
+}
+
+/***********PAQUETES*******************/
+#principalPaquetes{
+    background-color: #F2F6F6;
+    height: 750px;
+    padding-top: 20px;
+}
+#paquetes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: interRegular;
+    
+}
+
+#socios{
+    text-align: center;
+    font-family: interRegular;
+    font-size: 16px;
+    padding-bottom: 60px;
+}
+
+#paquetes article{
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#paquetes article img{
+    padding: 50px;
+    height: 150px;
+    width: 150px;
+}
+
+.imgPaquetes{
+    border: 10px solid #384001 ;
+    border-radius: 150px;
+    background-color: #FFF;
+    height: 255px;
+    width: 255px;
+}
+
+#paquetes article span{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+
+}
+
+
+#paquetes article button{
+    border: none;
+    font-weight: bold; /*negrilla*/
+    align-content: center;
+    background-color: #A3A656;
+    color: #FFF;
+    border-radius: 35px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 300px; /*largo del boton*/
+    height: 50px;
+    font-weight: bolder;
+}
+
+#paquetes article button:hover{
+    background-color: #384001;
+}
+
+
+/************PIES PAGINA******************/
+.piePagina {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #384001;
+    text-align: center;
+    padding-top: 22.5px;
+    padding-bottom: 22.5px;
+}
+
+.piePagina div ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 40px;
+    list-style: none;
+}
+
+.piePagina div ul li {
+    margin: 0 10px;
+}
+
+.piePagina div ul li a {
+    color: #A3A656;
+    text-decoration: none;
+    font-family: interRegular;
+    padding-right: 160px;
+}
+
+.piePagina .redes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px 35px 0px 0px;
+}
+
+.piePagina .redes span {
+    color: #A3A656;
+    margin: 0 10px;
+    font-family: interRegular;
+    padding: 0px 10px 0px 0px;
+}
+
+.piePagina .redes img {
+    padding: 0px 10px 0px 15px;
+}
+
