@@ -316,7 +316,11 @@ font-weight: 500;
     color: #A3A656;
     text-decoration: none;
     font-family: interRegular;
-    padding-right: 160px;
+    padding-right: 100px;
+}
+
+.piePagina div ul li a:hover{
+    color: #ffff00;
 }
 
 .piePagina .redes {
@@ -337,4 +341,9 @@ font-weight: 500;
 .piePagina .redes img {
     padding: 0px 10px 0px 15px;
 }
+
+.piePagina .redes img:hover{
+    background-color: #384001;
+}
+
 
